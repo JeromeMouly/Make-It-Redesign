@@ -1,0 +1,39 @@
+@media screen and (max-width: 400px) {
+
+    #myNav,
+    .overlay-content {
+        width: 100%;
+    }
+
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 2rem;
+    }
+
+    .overlay a:before {
+        font-size: 4rem;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    #particles-js {
+        width: 100%;
+    }
+
+    .img-hero {
+        width: 100%;
+    }
+
+    .logo-hero {
+        width: 100%;
+        height: auto;
+        margin-top: 50%;
+    }
+}

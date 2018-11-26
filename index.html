@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Make-it</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Back To Top BTN -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fa fa-arrow-circle-o-up fa-2x backtop-btn-icon" aria-hidden="true"></i></button>
+
+    <!-- Navigation -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#about" data-text="A Propos" onclick="closeNav()">A Propos</a>
+            <a href="#services" data-text="Services" onclick="closeNav()">Services</a>
+            <a href="#portfolio" data-text="Réalisations" onclick="closeNav()">Réalisations</a>
+            <a href="#contact" data-text="Contact" onclick="closeNav()">Contact</a>
+        </div>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" class="burger-menu" onclick="openNav()">
+        <div class="burger-menu">
+            <div class="burger1"></div>
+            <div class="burger-center">
+                <div class="burger2"></div>
+            </div>
+            <div class="burger3"></div>
+        </div>
+    </span>
+
+    <!-- Hero -->
+    <div id="particles-js" class="hero-image">
+        <div class="hero-text">
+            <svg class="logo-hero" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                version="1.1" id="svg5623" width="1120.3199" height="816" viewBox="0 0 1120.3199 816" sodipodi:docname="makeit.svg"
+                inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+                <metadata id="metadata5629">
+                    <rdf:RDF>
+                        <cc:Work rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                            <dc:title></dc:title>
+                        </cc:Work>
+                    </rdf:RDF>
+                </metadata>
+                <defs id="defs5627" />
+                <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
+                    gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+                    inkscape:window-width="1366" inkscape:window-height="704" id="namedview5625" showgrid="false"
+                    inkscape:zoom="0.40901275" inkscape:cx="993.25202" inkscape:cy="241.2774" inkscape:window-x="0"
+                    inkscape:window-y="27" inkscape:window-maximized="1" inkscape:current-layer="svg5623"
+                    inkscape:pagecheckerboard="false" />
+                <path style="fill:#FFF;fill-opacity:1;stroke-width:0.50538456;image-rendering:auto" d="M 180.20098,721.60185 C 144.59004,658.32614 147.19637,582.5681 143.19213,512.17196 c -1.26396,-109.36508 7.35158,-222.15318 52.49542,-323.1511 11.55569,-29.13408 -46.66677,14.43666 -66.11909,6.28132 -26.82694,5.69322 -85.863457,-20.86777 -52.562214,25.78484 19.515263,49.48367 42.721364,101.84132 35.596374,156.19359 -4.38208,41.7759 -33.106424,28.38002 -26.457614,-5.42858 C 75.381829,312.65229 52.441412,256.13781 26.199018,202.3175 9.2546097,179.2056 -10.313313,147.5042 30.468791,138.43196 c 28.614275,6.32319 51.681006,28.85007 81.769949,31.64913 32.4524,5.33175 69.91686,3.90459 97.92025,-13.93554 22.74443,-49.63823 50.50533,-99.195706 90.96921,-136.658664 37.66995,-38.454539 36.85577,31.532444 20.68808,51.783362 -20.89328,38.640492 -54.91934,68.988122 -92.45267,91.128182 -33.23843,67.806 -48.69453,142.5731 -59.60137,216.61919 -8.71876,96.20248 -14.26919,195.0562 7.14112,289.97311 -2.6569,45.43612 35.26038,1.15694 36.52456,10.00864 -7.66563,14.68522 -17.67632,38.81909 -33.22694,42.60248 z m 60.78648,-575.52714 c 36.94003,-21.79554 69.96997,-58.02143 75.5097,-102.005366 -18.43571,-28.621334 -44.13944,42.231453 -60.43902,59.798216 -2.54937,7.36901 -34.40817,52.53649 -15.07068,42.20715 z m 94.50691,255.99507 c 24.40253,-23.2521 47.41529,-49.4801 52.83245,-84.2086 9.57417,-45.06797 10.7844,-91.42451 23.00557,-135.88382 8.49825,-38.2629 25.52489,-75.89822 59.8627,-97.748308 24.39444,-34.359535 94.85047,-24.588067 61.00846,25.818128 -4.03664,26.89866 -64.54978,81.70811 -40.39701,23.58004 16.02343,-21.32806 16.72092,-77.052056 -15.80661,-36.8998 -25.01221,31.22515 -31.0002,73.21551 -39.94614,111.22402 -21.4587,58.79242 67.8636,-32.02241 65.2683,26.08346 -3.57166,21.75318 -62.99183,70.07285 -58.53344,52.92164 28.9145,-13.65293 36.12921,-70.3118 -5.8518,-43.35233 -5.16994,11.3926 -29.45145,76.49579 -6.87595,60.74792 31.1545,3.66729 43.60629,57.70914 83.02165,47.16077 47.06415,-5.67215 -0.0864,-52.97943 25.05853,-79.96254 8.29428,-28.45821 83.044,-75.22868 80.33329,-23.90095 -8.01706,32.71055 -76.29944,32.14708 -55.21619,69.26956 26.51588,38.98602 97.63931,-2.02409 108.90694,2.02031 -31.82911,26.24273 -76.03939,51.6539 -118.08066,33.89734 -25.2302,-7.67048 -46.32208,23.55864 -72.53398,25.80258 -33.46552,3.78986 -55.6042,-25.25873 -70.544,-50.63377 -17.2338,29.94269 -44.06353,60.61607 -75.51211,74.06435 z M 567.21318,275.73369 c 33.48874,-5.52567 19.49915,-48.57121 -3.80963,-15.7023 -3.16493,5.56738 -8.94422,23.88362 3.80963,15.7023 z M 196.26094,389.3916 c -28.13796,-14.37247 -12.11067,-53.1425 2.05792,-72.65591 22.35067,-25.6241 51.20826,-68.42993 89.16398,-59.03635 15.92421,49.44106 39.67701,-37.05343 52.97099,-5.32086 -5.52273,35.30568 -33.32136,67.49458 -29.26017,103.38007 14.61998,19.66896 69.74983,-12.97452 27.1952,17.69378 -25.19189,26.2988 -84.49593,17.54257 -60.82938,-28.93199 10.00483,-28.44525 26.39399,-47.85937 -12.56626,-57.15563 -24.66597,-24.96162 -43.55567,36.06146 -49.9753,55.32829 -11.55562,43.24935 49.06997,5.53864 49.20635,16.9026 -17.54597,16.57479 -43.25456,31.45574 -67.96333,29.796 z m 704.25334,-31.82468 c -46.05434,-12.55915 16.2158,-92.95583 -19.96269,-89.83615 -14.77678,6.25171 55.092,-51.95572 58.84753,-23.42395 -5.8795,24.37228 -41.27024,108.89298 9.20411,88.45421 12.82183,12.39239 -37.48216,31.53243 -48.08895,24.80589 z m 91.19532,-1.73251 c -25.30577,2.15276 -37.3866,-22.80816 -31.92426,-44.22464 8.53501,-62.11751 28.60277,-122.53062 41.54286,-183.43045 2.4142,-17.08657 33.7971,-56.20703 12.9623,-56.600804 -40.35449,10.468833 -1.0507,-19.673563 17.1382,-22.545189 12.785,-8.044981 59.7426,-28.793023 37.718,3.790383 -24.2708,42.582743 -36.2445,90.55301 -46.3294,137.95414 16.7566,-4.85992 78.9037,-34.76008 37.8764,-6.27582 -42.0866,12.13822 -55.5731,47.50232 -59.0963,88.66662 -17.18055,32.71845 5.2241,79.47933 40.4248,45.79424 21.2412,-20.37514 45.5869,-38.81797 69.9595,-53.62502 5.9941,16.29969 -25.1347,33.31722 -34.5122,47.93708 -23.3902,21.78528 -54.8999,35.65229 -85.7599,42.55946 z M 711.74476,277.84619 c 28.02534,-32.74544 70.21425,-47.48124 108.10925,-20.73166 24.02576,-6.71811 42.10013,-16.26064 12.07467,1.49124 -39.26968,37.24969 -83.40787,-12.76418 -120.18392,19.24042 z m 187.75875,-94.70425 c 17.52543,-26.28802 -14.34735,-56.64074 28.75144,-59.06565 39.58557,-5.06185 -2.17949,61.72783 -28.178,59.89472 l -0.57351,-0.82907 z"
+                    id="path5633" inkscape:connector-curvature="0" />
+            </svg>
+            <p class="hero-subtext">by Olivier MANGIN</p>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center">
+                <h1 class="title-section">A Propos</h1>
+                <hr class="title-divider">
+            </div>
+            <div class="w3-content w3-container about-block">
+                <div class="w3-third w3-center">
+                    <img src="assets/images/olivier.jpg" alt="Photo de Olivier MANGIN" class="about-img">
+                </div>
+                <div class="w3-twothird w3-container about-text-block">
+                    <p class="about-text">Make-it est un concept mis à disposition des entreprises. Son but est de
+                        fournir un panel de services web et logiciels simples et efficaces.</p>
+                    <p class="about-text">Parmi ces services, vous trouverez la création de sites web avec des
+                        technologies efficientes, un suivi de projet sur mesure et une gestion qui se veut simple et
+                        sans prérequis.</p>
+                    <p class="about-text">Un hébergement pour vos sites rapide, sûr et sans soucis. Une synthèse de ce
+                        qu'il s'y passe vous est proposée mensuellement pour que vous soyez toujours au top.</p>
+                    <p class="about-text">Vos mails d'entreprise sécurisés et un service de newsletter afin que tout
+                        vos besoins en numérique se retrouvent rassemblés en une seule entité, avec un seul
+                        interlocuteur de confiance.</p>
+                    <p class="about-text">A bientôt pour parler de tout ça autour d'un café !</p>
+                </div>
+            </div>
+            <div class="w3-content w3-container w3-center">
+                <svg class="logo-about" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg5623" width="1120.3199"
+                    height="816" viewBox="0 0 1120.3199 816" sodipodi:docname="makeit.svg" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+                    <metadata id="metadata5629">
+                        <rdf:RDF>
+                            <cc:Work rdf:about="">
+                                <dc:format>image/svg+xml</dc:format>
+                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                <dc:title></dc:title>
+                            </cc:Work>
+                        </rdf:RDF>
+                    </metadata>
+                    <defs id="defs5627" />
+                    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
+                        gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+                        inkscape:window-width="1366" inkscape:window-height="704" id="namedview5625" showgrid="false"
+                        inkscape:zoom="0.40901275" inkscape:cx="993.25202" inkscape:cy="241.2774" inkscape:window-x="0"
+                        inkscape:window-y="27" inkscape:window-maximized="1" inkscape:current-layer="svg5623"
+                        inkscape:pagecheckerboard="false" />
+                    <path style="fill:#FFF;fill-opacity:1;stroke-width:0.50538456;image-rendering:auto" d="M 180.20098,721.60185 C 144.59004,658.32614 147.19637,582.5681 143.19213,512.17196 c -1.26396,-109.36508 7.35158,-222.15318 52.49542,-323.1511 11.55569,-29.13408 -46.66677,14.43666 -66.11909,6.28132 -26.82694,5.69322 -85.863457,-20.86777 -52.562214,25.78484 19.515263,49.48367 42.721364,101.84132 35.596374,156.19359 -4.38208,41.7759 -33.106424,28.38002 -26.457614,-5.42858 C 75.381829,312.65229 52.441412,256.13781 26.199018,202.3175 9.2546097,179.2056 -10.313313,147.5042 30.468791,138.43196 c 28.614275,6.32319 51.681006,28.85007 81.769949,31.64913 32.4524,5.33175 69.91686,3.90459 97.92025,-13.93554 22.74443,-49.63823 50.50533,-99.195706 90.96921,-136.658664 37.66995,-38.454539 36.85577,31.532444 20.68808,51.783362 -20.89328,38.640492 -54.91934,68.988122 -92.45267,91.128182 -33.23843,67.806 -48.69453,142.5731 -59.60137,216.61919 -8.71876,96.20248 -14.26919,195.0562 7.14112,289.97311 -2.6569,45.43612 35.26038,1.15694 36.52456,10.00864 -7.66563,14.68522 -17.67632,38.81909 -33.22694,42.60248 z m 60.78648,-575.52714 c 36.94003,-21.79554 69.96997,-58.02143 75.5097,-102.005366 -18.43571,-28.621334 -44.13944,42.231453 -60.43902,59.798216 -2.54937,7.36901 -34.40817,52.53649 -15.07068,42.20715 z m 94.50691,255.99507 c 24.40253,-23.2521 47.41529,-49.4801 52.83245,-84.2086 9.57417,-45.06797 10.7844,-91.42451 23.00557,-135.88382 8.49825,-38.2629 25.52489,-75.89822 59.8627,-97.748308 24.39444,-34.359535 94.85047,-24.588067 61.00846,25.818128 -4.03664,26.89866 -64.54978,81.70811 -40.39701,23.58004 16.02343,-21.32806 16.72092,-77.052056 -15.80661,-36.8998 -25.01221,31.22515 -31.0002,73.21551 -39.94614,111.22402 -21.4587,58.79242 67.8636,-32.02241 65.2683,26.08346 -3.57166,21.75318 -62.99183,70.07285 -58.53344,52.92164 28.9145,-13.65293 36.12921,-70.3118 -5.8518,-43.35233 -5.16994,11.3926 -29.45145,76.49579 -6.87595,60.74792 31.1545,3.66729 43.60629,57.70914 83.02165,47.16077 47.06415,-5.67215 -0.0864,-52.97943 25.05853,-79.96254 8.29428,-28.45821 83.044,-75.22868 80.33329,-23.90095 -8.01706,32.71055 -76.29944,32.14708 -55.21619,69.26956 26.51588,38.98602 97.63931,-2.02409 108.90694,2.02031 -31.82911,26.24273 -76.03939,51.6539 -118.08066,33.89734 -25.2302,-7.67048 -46.32208,23.55864 -72.53398,25.80258 -33.46552,3.78986 -55.6042,-25.25873 -70.544,-50.63377 -17.2338,29.94269 -44.06353,60.61607 -75.51211,74.06435 z M 567.21318,275.73369 c 33.48874,-5.52567 19.49915,-48.57121 -3.80963,-15.7023 -3.16493,5.56738 -8.94422,23.88362 3.80963,15.7023 z M 196.26094,389.3916 c -28.13796,-14.37247 -12.11067,-53.1425 2.05792,-72.65591 22.35067,-25.6241 51.20826,-68.42993 89.16398,-59.03635 15.92421,49.44106 39.67701,-37.05343 52.97099,-5.32086 -5.52273,35.30568 -33.32136,67.49458 -29.26017,103.38007 14.61998,19.66896 69.74983,-12.97452 27.1952,17.69378 -25.19189,26.2988 -84.49593,17.54257 -60.82938,-28.93199 10.00483,-28.44525 26.39399,-47.85937 -12.56626,-57.15563 -24.66597,-24.96162 -43.55567,36.06146 -49.9753,55.32829 -11.55562,43.24935 49.06997,5.53864 49.20635,16.9026 -17.54597,16.57479 -43.25456,31.45574 -67.96333,29.796 z m 704.25334,-31.82468 c -46.05434,-12.55915 16.2158,-92.95583 -19.96269,-89.83615 -14.77678,6.25171 55.092,-51.95572 58.84753,-23.42395 -5.8795,24.37228 -41.27024,108.89298 9.20411,88.45421 12.82183,12.39239 -37.48216,31.53243 -48.08895,24.80589 z m 91.19532,-1.73251 c -25.30577,2.15276 -37.3866,-22.80816 -31.92426,-44.22464 8.53501,-62.11751 28.60277,-122.53062 41.54286,-183.43045 2.4142,-17.08657 33.7971,-56.20703 12.9623,-56.600804 -40.35449,10.468833 -1.0507,-19.673563 17.1382,-22.545189 12.785,-8.044981 59.7426,-28.793023 37.718,3.790383 -24.2708,42.582743 -36.2445,90.55301 -46.3294,137.95414 16.7566,-4.85992 78.9037,-34.76008 37.8764,-6.27582 -42.0866,12.13822 -55.5731,47.50232 -59.0963,88.66662 -17.18055,32.71845 5.2241,79.47933 40.4248,45.79424 21.2412,-20.37514 45.5869,-38.81797 69.9595,-53.62502 5.9941,16.29969 -25.1347,33.31722 -34.5122,47.93708 -23.3902,21.78528 -54.8999,35.65229 -85.7599,42.55946 z M 711.74476,277.84619 c 28.02534,-32.74544 70.21425,-47.48124 108.10925,-20.73166 24.02576,-6.71811 42.10013,-16.26064 12.07467,1.49124 -39.26968,37.24969 -83.40787,-12.76418 -120.18392,19.24042 z m 187.75875,-94.70425 c 17.52543,-26.28802 -14.34735,-56.64074 28.75144,-59.06565 39.58557,-5.06185 -2.17949,61.72783 -28.178,59.89472 l -0.57351,-0.82907 z"
+                        id="path5633" inkscape:connector-curvature="0" />
+                </svg>
+                <p class="by-text">by Olivier Mangin</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center">
+                <h1 class="title-section">Services</h1>
+                <hr class="title-divider">
+            </div>
+            <div class="w3-container services-block">
+                <div class="container">
+                    <div class="box">
+                        <div class="w3-container w3-center thumb services-text-block">
+                            <p class="services-text">Technologies Web</p>
+                            <p class="services-text">Technologies Logicielles</p>
+                            <p class="services-text">Des cycles rapides d'échange pour être toujours au plus près de la
+                                demande</p>
+                            <p class="services-text">De la passion</p>
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <i class="fa fa-code" aria-hidden="true"></i>
+                                <h3>Développement</h3>
+                                <a href="#contact">Sur Devis</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="w3-container w3-center thumb services-text-block">
+                            <p class="services-text">Hébergement sûr et de qualité</p>
+                            <p class="services-text">Surveillance 24/7</p>
+                            <p class="services-text">Suivi personnel de projet</p>
+                            <p class="services-text">Modifications du site sur demande</p>
+                            <p class="services-text">Conseils d'optimisation</p>
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <i class="fa fa-server" aria-hidden="true"></i>
+                                <h3>Hébergement</h3>
+                                <a href="#contact">35&euro;ht/mois</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="w3-container w3-center thumb">
+                            <p class="services-text">Avec votre nom de domaine</p>
+                            <p class="services-text">Jusqu'à 5 boîtes mail</p>
+                            <p class="services-text">Anti-Spam sûr et flexible</p>
+                            <p class="services-text">Connexion sécurisée via Webmail et vos applis</p>
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <h3>Boîtes Mail</h3>
+                                <a href="#contact">10&euro;ht/mois</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="w3-container w3-center thumb">
+                            <p class="services-text">Facile d'utilisation</p>
+                            <p class="services-text">Plusieurs listes de diffusion</p>
+                            <p class="services-text">Bonne réputation auprès des
+                                Anti-Spam pour arriver dans la
+                                boîte de réception de vos abonnés
+                            </p>
+                            <p class="services-text">Pannel de contrôle simple</p>
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                <h3>Newsletter</h3>
+                                <a href="#contact">10&euro;ht/mois</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center">
+                <h1 class="title-section">Réalisations</h1>
+                <hr class="title-divider">
+            </div>
+            <div class="w3-container w3-center portfolio-block">
+                <div class="w3-third w3-center portfolio-card-block">
+                    <div class="w3-card-4 portfolio-card" style="width:100%">
+                        <img src="assets/images/myplay2.jpg" alt="Norway" style="width:100%">
+                        <div class="w3-container w3-center portfolio-text">
+                            <h2 class="portfolio-card-title">myPlay2</h2>
+                            <hr>
+                            <p>Ce site sert à gérer des événements et des jeux. Il possède un système de connexion, un
+                                panel de création automatique de pages et une auto-correction de QCM.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-center portfolio-card-block">
+                    <div class="w3-card-4 portfolio-card" style="width:100%">
+                        <img src="assets/images/lescharmesdaunac.jpg" alt="Norway" style="width:100%">
+                        <div class="w3-container w3-center portfolio-text">
+                            <a href="https://www.lescharmesdaunac.com/"><h2 class="portfolio-card-title">Les Charmes d'Aunac</h2></a>
+                            <hr>
+                            <p>Un site vitrine simple, mais sur mesure. Notemment une galerie 3D pour des plans, un
+                                livre en ligne et un catalogue. Le catalogue est synchronisé avec leur état de stock.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-center portfolio-card-block">
+                    <div class="w3-card-4 portfolio-card" style="width:100%">
+                        <img src="assets/images/autrecv.jpg" alt="Norway" style="width:100%">
+                        <div class="w3-container w3-center portfolio-text">
+                            <h2 class="portfolio-card-title">Autre CV</h2>
+                            <hr>
+                            <p>Ce logiciel se présente comme un formulaire à remplir. Il les exportera dans un tableur
+                                et les imprimera sans action de l'utilisateur sous forme d'un CV.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center">
+                <h1 class="title-section">Contact</h1>
+                <hr class="title-divider">
+            </div>
+            <div class="w3-container w3-center contact-section">
+                <div class="w3-quarter contact-block">
+                    <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <p>Une demande particulière ?? Besoin d'un devis ??</p>
+                    <br>
+                    <form class="w3-container">
+                        <p>
+                            <label class="w3-left" for="fname">Votre Prénom</label>
+                            <input id="fname" class="w3-input form-styling" type="text" placeholder="Prénom">
+                        </p>
+                        <p>
+                            <label class="w3-left" for="lname">Votre Nom</label>
+                            <input id="lname" class="w3-input form-styling" name="firstname" type="text" placeholder="Nom">
+                        </p>
+                        <p>
+                            <label class="w3-left" for="nlemail">Votre Email</label>
+                            <input id="nlemail" class="w3-input form-styling" type="text" name="email" placeholder="Email">
+                        </p>
+                        <p>
+                            <label class="w3-left" for="subject">Votre Message</label>
+                            <textarea id="subject" class="w3-input form-styling" name="subject" placeholder="Message"
+                                style="height:100px"></textarea>
+                        </p>
+                        <p class="row">
+                            <input class="form-btn" type="submit" value="Envoyer">
+                        </p>
+                    </form>
+                </div>
+                <div class="w3-quarter contact-block">
+                    <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <p>Vous souhaitez me joindre directement ??</p>
+                    <br>
+                    <h2>06.48.00.28.43</h2>
+                </div>
+                <div class="w3-quarter contact-block">
+                    <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <p>Suivez les infos de Make-it sur Facebook</p>
+                    <br>
+                    <div class="fb-page" data-href="https://www.facebook.com/makeitfr/" data-tabs="timeline"
+                        data-height="438" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                        data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/makeitfr/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/makeitfr/">Make-it</a></blockquote>
+                    </div>
+                </div>
+                <div class="w3-quarter contact-block">
+                    <i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <p>Abonnez-vous</p>
+                    <br>
+                    <form class="w3-container">
+                        <p>
+                            <label class="w3-left" for="nlemail">Votre Email</label>
+                            <input id="nlemail" class="w3-input form-styling" type="text" placeholder="adresse@mail.moi">
+                        </p>
+                        <p class="row">
+                            <input class="form-btn" type="submit" value="Envoyer">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="w3-row subfooter">
+            <div class="w3-content w3-container w3-center">
+                <p>&copy; 2018 Make-it || Mentions Légales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.min.js" defer></script>
+    <script src="assets/js/particles.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    </script>
+</body>
+
+</html>
